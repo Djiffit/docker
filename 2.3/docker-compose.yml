@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+ front:
+  image: front
+  build: ./frontend-example
+  environment:
+   - API_URL=http://localhost:8000
+  ports:
+   - 5000:5000
+
+ back:
+  image: back
+  build: ./backend-example
+  ports:
+   - 8000:8000
+  environment:
+   - FRONT_URL=http://localhost:5000
+  

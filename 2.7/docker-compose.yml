@@ -1,0 +1,29 @@
+version: '3.5'
+
+services:
+  mlf:
+    image: mlf
+    build: ./ml-kurkkumopo-frontend
+    ports:
+      - 3000:3000
+
+  mlb:
+    image: mlb
+    build: ./ml-kurkkumopo-backend
+    ports:
+     - 5000:5000
+    volumes:
+     - model:/src/model
+
+  mlt:
+    image: mlt
+    build: ./ml-kurkkumopo-training
+    volumes:
+     - model:/src/model
+     - images:/src/imgs
+     - data:/src/data
+
+volumes:
+  model:
+  images:
+  data:

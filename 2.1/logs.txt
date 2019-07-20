@@ -1,0 +1,18 @@
+Fri, 19 Jul 2019 20:14:26 GMT
+Fri, 19 Jul 2019 20:14:29 GMT
+Fri, 19 Jul 2019 20:14:32 GMT
+Fri, 19 Jul 2019 20:14:35 GMT
+Secret message is:
+"Volume bind mount is easy"
+Fri, 19 Jul 2019 20:14:41 GMT
+Fri, 19 Jul 2019 20:14:44 GMT
+Fri, 19 Jul 2019 20:14:47 GMT
+Fri, 19 Jul 2019 20:14:50 GMT
+Secret message is:
+"Volume bind mount is easy"
+Fri, 19 Jul 2019 20:14:56 GMT
+Fri, 19 Jul 2019 20:14:59 GMT
+Fri, 19 Jul 2019 20:15:02 GMT
+Fri, 19 Jul 2019 20:15:05 GMT
+Secret message is:
+"Volume bind mount is easy"

@@ -1,0 +1,36 @@
+version: '3.3'
+
+services:
+  redis:
+    image: redis:5
+    container_name: redis
+    ports:
+     - 6379:6379
+  backend:
+    image: back
+    build: .
+    environment:
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_PASSWORD=hidden
+      - DB_USERNAME=postgres
+      - DB_HOST=poskireisi
+    ports:
+      - 8000:8000
+  front:
+    image: front
+    ports:
+      - 5000:5000
+  db:
+    image: postgres
+    container_name: poskireisi
+    restart: unless-stopped
+    volumes:
+      - database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: hidden
+
+volumes:
+  database:
